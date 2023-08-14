@@ -47,5 +47,5 @@ If you experience an issue while following this guide, there are many ways that 
 + If you experience an issue while following this guide, you can check the [Troubleshooting](troubleshooting) page for a solution.
 + If the resources we've provided here aren't helping, you can get one-on-one support over at [RPCSX on Discord](https://discord.com/invite/t6dzA4wUdG).
 
-Continue to [Installation](Installation)
+Continue to [Installation](installation)
 {: .notice--primary}
