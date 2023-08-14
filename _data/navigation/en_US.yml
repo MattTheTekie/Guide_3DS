@@ -5,19 +5,19 @@ main:
     url: /
   -
     title: FAQ
-    url: /rpcsx-guide/faq
+    url: rpcsx-guide/faq
   -
     title: Troubleshooting
-    url: /rpcsx-guide/troubleshooting
+    url: rpcsx-guide/troubleshooting
   -
     title: Contribute
-    url: /rpcsx-guide/contribute
+    url: rpcsx-guide/contribute
   -
     title: Credits
-    url: /rpcsx-guide/credits
+    url: rpcsx-guide/credits
   -
     title: Site Navigation
-    url: /rpcsx-guide/site-navigation
+    url: rpcsx-guide/site-navigation
 top:
   -
     title: This website uses cookies to display the current guide progress on the sidebar and otherwise enhance the site.
