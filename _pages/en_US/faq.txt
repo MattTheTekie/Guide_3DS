@@ -3,8 +3,6 @@ title: "FAQ"
 ---
 {% include toc title="Table of Contents"%}
 
-<div class="notice--danger">{{ update-notice | markdownify }}</div>
-
 ## RPCSX FAQ
 
 {% capture compat %}
