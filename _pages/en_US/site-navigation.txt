@@ -20,7 +20,7 @@ sitemap: false
 + [Contribute](contribute)
 + [FAQ](faq)
 + [Example](example)
-+ [Home]()
++ [Home](../)
 + [Key Information](key-information)
 + [Troubleshooting](troubleshooting)
 + [Installation](installation)
