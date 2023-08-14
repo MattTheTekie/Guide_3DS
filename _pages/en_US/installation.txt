@@ -13,16 +13,14 @@ For the foreseeable future, installation will require Linux in some form.
 ### Preperation:
 #### Section I - Install dependencies
 Fire up a terminal, and run the following commands.
-Install dependencies
 {: .notice--info}
 
 `sudo apt install build-essential cmake libunwind-dev libglfw3-dev libvulkan-dev vulkan-validationlayers-dev spirv-tools glslang-tools libspirv-cross-c-shared-dev`
 ### Fedora based systems:
 Fire up a terminal, and run the following commands.
-Install dependencies
 {: .notice--info}
 
-Install spirv-cross.
+Install `spirv-cross`.
 {: .notice--info}
 
 `sudo dnf install cmake libunwind-devel glfw-devel vulkan-devel vulkan-validation-layers-devel spirv-tools glslang-devel gcc-c++ gcc spirv-tools-devel xbyak-devel`
@@ -30,6 +28,8 @@ Install spirv-cross.
 `git clone https://github.com/KhronosGroup/SPIRV-Cross && cd SPIRV-Cross && mkdir build && cd build && cmake .. && cmake --build . && sudo make install`
 ### Arch based systems:
 Fire up a terminal, and run the following commands.
+{: .notice--info}
+
 `sudo pacman -S libunwind glfw-x11 vulkan-devel glslang`
 
 Pull `spirv-cross` from the AUR. **Skip the first line if you have yay already.**
@@ -43,9 +43,9 @@ Pull `spirv-cross` from the AUR. **Skip the first line if you have yay already.*
 Clone the repo.
 {: .notice--info}
 
-`git clone --recursive https://github.com/RPCSX/rpcsx && cd rpcsx
+`git clone --recursive https://github.com/RPCSX/rpcsx && cd rpcsx`
 
-git submodule update --init --recursive`
+`git submodule update --init --recursive`
 
 Compile the emulator.
 {: .notice--info}
@@ -55,13 +55,13 @@ Compile the emulator.
 Create a virtual HDD. Note that the PS4 filesystem is **case-insensitive.**
 {: .notice--info}
 
-`truncate -s 512M ps4-hdd.exfat
+`truncate -s 512M ps4-hdd.exfat`
 
-mkfs.exfat -n PS4-HDD ./ps4-hdd.exfat
+`mkfs.exfat -n PS4-HDD ./ps4-hdd.exfat`
 
-mkdir ps4-fs
+`mkdir ps4-fs`
 
-sudo mount -t exfat -o uid=`id -u`,gid=`id -g` ./ps4-hdd.exfat ./ps4-fs`
+`sudo mount -t exfat -o uid=`id -u`,gid=`id -g` ./ps4-hdd.exfat ./ps4-fs`
 
 #### Section III - WSL
 Windows Subsystem for Linux, and ArchWSL will be appended to this guide when they are available.
