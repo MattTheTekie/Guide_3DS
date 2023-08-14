@@ -15,7 +15,7 @@ Each section is collapsed by default. Click or tap on the name of the section to
 
 {% capture compat %}
 <summary><strong>Game compatibility</strong></summary>
-![]({{ "/images/screenshots/onboarding/compatible.png" | absolute_url }})
+![]({{ "/images/bloodborne.jpg" | absolute_url }})
 {: .notice--info}
 
 The emulator can run a few test samples, and can get to the loading screen of `We Are Doomed`. A compatibility table is in the works, and will likely arise when RPCSX is able to properly run commercial games.
