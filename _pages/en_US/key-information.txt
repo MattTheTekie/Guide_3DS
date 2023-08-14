@@ -4,12 +4,9 @@ title: "Key Information"
 
 {% include toc title="Table of Contents" %}
 
-{% capture update-notice %}
-{% include_relative include/3ds-11.17.txt %}
-{% endcapture %}
 <div class="notice--danger">{{ update-notice | markdownify }}</div>
 
-If this is your first time working with emulators (or you're unfamiliar with technology), keep reading! Otherwise, if you have prior experience and know what you're doing, continue to [Get Started](get-started).
+Wherever this is your first time working with emulators (or you're unfamiliar with technology), to having prior experience and know what you're doing, keep reading!
 {: .notice--info}
 
 This page covers some of the base computer terminology and emulator related-specific information that you should know before following this guide.
