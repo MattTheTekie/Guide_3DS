@@ -4,8 +4,6 @@ title: "Key Information"
 
 {% include toc title="Table of Contents" %}
 
-<div class="notice--danger">{{ update-notice | markdownify }}</div>
-
 Wherever this is your first time working with emulators (or you're unfamiliar with technology), to having prior experience and know what you're doing, keep reading!
 {: .notice--info}
 
