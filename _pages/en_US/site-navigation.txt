@@ -42,7 +42,7 @@ sitemap: false
 + [Get Started](get-started)
 + [GodMode9 Usage](godmode9-usage)
 + [H2testw (Windows)](h2testw-(windows))
-+ [Home](/)
++ [Home](https://sdkpaint.github.io/rpcsx-guide)
 + [Installing boot9strap (freakyhax)](installing-boot9strap-(freakyhax))
 + [Installing boot9strap (Fredtool-Inject)](installing-boot9strap-(fredtool-inject))
 + [Installing boot9strap (Hardmod)](installing-boot9strap-(hardmod))
