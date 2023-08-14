@@ -23,29 +23,19 @@ Each section is collapsed by default. Click or tap on the name of the section to
 ![]({{ "/images/screenshots/onboarding/compatible.png" | absolute_url }})
 {: .notice--info}
 
-The emulator can run a few test samples, and can get to the loading screen of We Are Doomed. A compatibility table is in the works, and will likely arise when RPCSX is able to properly run commercial games.
+The emulator can run a few test samples, and can get to the loading screen of `We Are Doomed`. A compatibility table is in the works, and will likely arise when RPCSX is able to properly run commercial games.
 {% endcapture %}
 
-<details>{{ compat | markdownify }}</details>
-
-{% capture compat %}
-<summary><strong>Potential risks (Disclaimer)</strong></summary>
-
-By modding your console, you subject it to the remote (but non-zero) possibility of the console being banned from online play or bricked (rendered non-functional). ___Incorrect file placement will NOT brick your console___, but purposely skipping instructions might. Similarly, the last ban wave occurred over five years ago, but there is no guarantee that another one will not occur in the future.
-
-In short: Modding your console is safe, but it's ___your responsibility___ if something goes wrong.
-
-{% endcapture %}
 <details>{{ compat | markdownify }}</details>
 {: .notice--warning}
 
-## Things you need to do on your computer
+## Things you need on your computer
 
 {% capture compat %}
 <summary><strong>Linux</strong></summary>
 ![]({{ "/images/screenshots/onboarding/sdroot.png" | absolute_url }})
 {: .notice--info}
-You will **need** Linux to install the RPCSX emulator. The RPCSX emulator **will not** work on WSL. Until we progress enough in the development of the emulator this project **will be linux only.**
+You will **need** Linux to install the RPCSX emulator. The RPCSX emulator **will not** work on WSL. Until we progress enough in the development of the emulator this project **will be Linux only.**
 {% endcapture %}
 <details>{{ compat | markdownify }}</details>
 
