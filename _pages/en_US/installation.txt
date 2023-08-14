@@ -65,5 +65,7 @@ Create a virtual HDD. Note that the PS4 filesystem is **case-insensitive.**
 
 #### Section III - WSL
 Windows Subsystem for Linux, and ArchWSL will be appended to this guide when they are available.
+{: .notice--info}
+
 ### Continue to [Finalizing Setup](finalizing-setup)
 {: .notice--primary}
