@@ -2,7 +2,7 @@
 main:
   -
     title: Home
-    url: /
+    url: rpcsx-guide/
   -
     title: FAQ
     url: rpcsx-guide/faq
