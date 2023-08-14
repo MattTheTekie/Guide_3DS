@@ -184,7 +184,6 @@ exclude: [
   rss.py,
   crowdin.yaml,
   staticman.yml,
-  torrents,
   _pages/en_US/*/include,
 ]
 
