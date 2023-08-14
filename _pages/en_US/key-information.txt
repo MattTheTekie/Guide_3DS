@@ -9,50 +9,23 @@ title: "Key Information"
 {% endcapture %}
 <div class="notice--danger">{{ update-notice | markdownify }}</div>
 
-If this is your first time modding a 3DS (or you're unfamiliar with technology), keep reading! Otherwise, if you have prior experience and know what you're doing, continue to [Get Started](get-started).
+If this is your first time working with emulators (or you're unfamiliar with technology), keep reading! Otherwise, if you have prior experience and know what you're doing, continue to [Get Started](get-started).
 {: .notice--info}
 
-This page covers some of the base computer terminology and 3DS-specific information that you should know before following this guide.
+This page covers some of the base computer terminology and emulator related-specific information that you should know before following this guide.
 
 Each section is collapsed by default. Click or tap on the name of the section to open it.
 
-## Things you should know about the 3DS
+## Things you should know about the progress of this emulator
 
 {% capture compat %}
-<summary><strong>3DS/2DS compatibility</strong></summary>
+<summary><strong>Game compatibility</strong></summary>
 ![]({{ "/images/screenshots/onboarding/compatible.png" | absolute_url }})
 {: .notice--info}
 
-This guide works with every retail console in the Nintendo 3DS family of consoles (including the 3DS, 3DS XL/LL, 2DS, New 3DS, New 3DS XL/LL, and New 2DS XL/LL), regardless of region or firmware.
+The emulator can run a few test samples, and can get to the loading screen of We Are Doomed. A compatibility table is in the works, and will likely arise when RPCSX is able to properly run commercial games.
 {% endcapture %}
 
-<details>{{ compat | markdownify }}</details>
-
-{% capture compat %}
-<summary><strong>Computer compatibility</strong></summary>
-![]({{ "/images/screenshots/onboarding/os.jpg" | absolute_url }})
-{: .notice--info}
-You can follow this guide as long as you are able to download files from the Internet and copy them to your SD card. Depending on your computer/phone/electronic device, you may need to purchase a USB to SD card adapter to allow your computer to read your SD card.
-{% endcapture %}
-
-<details>{{ compat | markdownify }}</details>
-
-{% capture compat %}
-<summary><strong>SD card location, type, and capacity</strong></summary>
-![]({{ "/images/screenshots/onboarding/sdcard.jpg" | absolute_url }})
-{: .notice--info}
-
-The location of the SD card slot and the type of SD card that is accepted depends on the model of your 3DS. More information can be found on [Nintendo's official support page](https://en-americas-support.nintendo.com/app/answers/detail/a_id/271/~/how-to-insert-an-sd-card-or-microsd-card).
-
-The 3DS can read SD cards of any capacity (even those larger than 32GB), but the card must be formatted as FAT32 (**not** exFAT or NTFS). You can use one of the following tools to format your SD card, depending on your operating system: [Windows](formatting-sd-(windows)), [macOS](formatting-sd-(mac)), [Linux](formatting-sd-(linux)). SD cards larger than **128GB** are not recommended due to known issues with custom themes and GBA/DS graphics.
-
-To follow this guide, you'll need an SD card with a capacity of at least **2GB**.
-{: .notice--warning}
-
-If you want, you can check your SD card for errors before following this guide using [H2testw (Windows)](h2testw-(windows)), [F3 (Linux)](f3-(linux)), or [F3XSwift (Mac)](f3xswift-(mac))
-{: .notice--info}
-
-{% endcapture %}
 <details>{{ compat | markdownify }}</details>
 
 {% capture compat %}
@@ -69,22 +42,10 @@ In short: Modding your console is safe, but it's ___your responsibility___ if so
 ## Things you need to do on your computer
 
 {% capture compat %}
-<summary><strong>File placement terminology (e.g. "root of SD")</strong></summary>
+<summary><strong>Linux</strong></summary>
 ![]({{ "/images/screenshots/onboarding/sdroot.png" | absolute_url }})
 {: .notice--info}
-
-When copying files to the SD card, it is important to copy them to the right location - otherwise, the console will not detect the file and the exploit or software you are trying to use will not work. A term you will see frequently on this guide is **root of the SD card**, which means you are not inside any folder on your SD card. The directory that appears when you first open your SD card on your computer is called the 'root'.
-
-You may also see folder names indicated like this: `/folder/`. The slashes are used to indicate directories and are not part of the name of the folder. For example, `/folder1/folder2/` would refer to `folder2` inside of `folder1`:
-
-![]({{ "/images/screenshots/onboarding/folders.png" | absolute_url }})
-{: .notice--info}
-
-**Angle brackets** (\< and \>) are also occasionally used to refer to system-specific identifiers. For example, if the guide says `<ID0>`, it is referring to the system-specific identifier inside of the `Nintendo 3DS` folder, rather than a folder literally named "ID0":
-
-![]({{ "/images/screenshots/onboarding/anglebrackets.png" | absolute_url }})
-{: .notice--info}
-
+You will **need** Linux to install the RPCSX emulator. The RPCSX emulator **will not** work on WSL. Until we progress enough in the development of the emulator this project **will be linux only.**
 {% endcapture %}
 <details>{{ compat | markdownify }}</details>
 
