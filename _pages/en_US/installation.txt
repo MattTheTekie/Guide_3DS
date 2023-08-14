@@ -67,5 +67,5 @@ Create a virtual HDD. Note that the PS4 filesystem is **case-insensitive.**
 Windows Subsystem for Linux, and ArchWSL will be appended to this guide when they are available.
 {: .notice--info}
 
-You're done! Custom firmware is now fully configured on your console.
+You're done! Enjoy the emulator!
 {: .notice--success}
