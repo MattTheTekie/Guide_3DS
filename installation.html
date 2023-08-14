@@ -351,10 +351,9 @@ window.cookieconsent.initialise({
 <ul class="toc__menu" id="markdown-toc">
   <li><a href="#compatibility-notes" id="markdown-toc-compatibility-notes">Compatibility Notes</a></li>
   <li><a href="#method-1-linux" id="markdown-toc-method-1-linux">Method 1: Linux</a>    <ul>
-      <li><a href="#section-i---install-dependencies" id="markdown-toc-section-i---install-dependencies">Section I - Install dependencies.</a></li>
+      <li><a href="#section-i---install-dependencies" id="markdown-toc-section-i---install-dependencies">Section I - Install dependencies</a></li>
     </ul>
   </li>
-  <li><a href="#ubuntu-based-systems" id="markdown-toc-ubuntu-based-systems">Ubuntu based systems:</a></li>
   <li><a href="#fedora-based-systems" id="markdown-toc-fedora-based-systems">Fedora based systems:</a></li>
   <li><a href="#arch-based-systems" id="markdown-toc-arch-based-systems">Arch based systems:</a>    <ul>
       <li><a href="#section-ii---continued-installation" id="markdown-toc-section-ii---continued-installation">Section II - Continued Installation:</a></li>
@@ -370,32 +369,22 @@ window.cookieconsent.initialise({
 
 <h3 class="notice--info" id="compatibility-notes">Compatibility Notes</h3>
 
-<p>For the foreseeable future, installation will require Linux in some form.</p>
+<p class="notice--info">For the foreseeable future, installation will require Linux in some form.</p>
 
 <h3 id="method-1-linux">Method 1: Linux</h3>
-
-<h4 id="section-i---install-dependencies">Section I - Install dependencies.</h4>
-<h3 id="ubuntu-based-systems">Ubuntu based systems:</h3>
-<p>Install dependencies.
-<code class="language-plaintext highlighter-rouge">sudo apt install build-essential cmake libunwind-dev libglfw3-dev libvulkan-dev vulkan-validationlayers-dev spirv-tools glslang-tools libspirv-cross-c-shared-dev</code></p>
+<h4 id="section-i---install-dependencies">Section I - Install dependencies</h4>
+<p><code class="language-plaintext highlighter-rouge">sudo apt install build-essential cmake libunwind-dev libglfw3-dev libvulkan-dev vulkan-validationlayers-dev spirv-tools glslang-tools libspirv-cross-c-shared-dev</code></p>
 <h3 id="fedora-based-systems">Fedora based systems:</h3>
-<p>Install traditional dependencies.
-<code class="language-plaintext highlighter-rouge">sudo dnf install cmake libunwind-devel glfw-devel vulkan-devel vulkan-validation-layers-devel spirv-tools glslang-devel gcc-c++ gcc spirv-tools-devel xbyak-devel</code>
-Install <code class="language-plaintext highlighter-rouge">spirv-cross</code>.
+<p><code class="language-plaintext highlighter-rouge">sudo dnf install cmake libunwind-devel glfw-devel vulkan-devel vulkan-validation-layers-devel spirv-tools glslang-devel gcc-c++ gcc spirv-tools-devel xbyak-devel</code>
 <code class="language-plaintext highlighter-rouge">git clone https://github.com/KhronosGroup/SPIRV-Cross &amp;&amp; cd SPIRV-Cross &amp;&amp; mkdir build &amp;&amp; cd build &amp;&amp; cmake .. &amp;&amp; cmake --build . &amp;&amp; sudo make install</code></p>
 <h3 id="arch-based-systems">Arch based systems:</h3>
-<p>Install traditional dependencies.
-<code class="language-plaintext highlighter-rouge">sudo pacman -S libunwind glfw-x11 vulkan-devel glslang</code>
-Pull <code class="language-plaintext highlighter-rouge">spirv-cross</code> from the AUR. <strong>Skip the first line if you have <code class="language-plaintext highlighter-rouge">yay</code> already.</strong>
+<p><code class="language-plaintext highlighter-rouge">sudo pacman -S libunwind glfw-x11 vulkan-devel glslang</code>
 <code class="language-plaintext highlighter-rouge">sudo pacman -S --needed git base-devel &amp;&amp; git clone https://aur.archlinux.org/yay.git &amp;&amp; cd yay &amp;&amp; makepkg -si</code>
 <code class="language-plaintext highlighter-rouge">yay -S spirv-cross</code></p>
 <h4 id="section-ii---continued-installation">Section II - Continued Installation:</h4>
-<p>Clone the repo.
-<code class="language-plaintext highlighter-rouge">git clone --recursive https://github.com/RPCSX/rpcsx &amp;&amp; cd rpcsx
+<p><code class="language-plaintext highlighter-rouge">git clone --recursive https://github.com/RPCSX/rpcsx &amp;&amp; cd rpcsx
 git submodule update --init --recursive</code>
-Compile the emulator.
 <code class="language-plaintext highlighter-rouge">mkdir -p build &amp;&amp; cd build &amp;&amp; cmake .. &amp;&amp; cmake --build .</code>
-Create a virtual HDD. Note that the PS4 filesystem is case-insensitive.
 <code class="language-plaintext highlighter-rouge">truncate -s 512M ps4-hdd.exfat
 mkfs.exfat -n PS4-HDD ./ps4-hdd.exfat
 mkdir ps4-fs
