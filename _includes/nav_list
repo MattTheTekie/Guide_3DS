@@ -1,4 +1,4 @@
-{% assign split_path = page.path | split: "/" %}
+{% assign split_path = page.path | split: "/rpcsx-guide/" %}
 {% assign locale = split_path[1] %}
 {% if locale == 'en_US' %}
   {% assign locale_var = '/' %}
