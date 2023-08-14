@@ -6,7 +6,7 @@ sitemap: false
 {% capture notice-1 %}
 **Popular**
 
-+ [Home]()
++ [Home](../)
 + [Installation](installation)
 + [FAQ](faq)
 
