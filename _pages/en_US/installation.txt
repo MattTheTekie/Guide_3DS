@@ -7,7 +7,6 @@ title: "Installing RPCSX"
 {: .notice--info}
 
 ### Compatibility Notes
-
 For the foreseeable future, installation will require Linux in some form.
 {: .notice--info}
 
