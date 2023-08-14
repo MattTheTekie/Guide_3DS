@@ -26,8 +26,7 @@ Thoroughly read all of the introductory pages (including this one!) before proce
 Fun facts:
 
 * 7.2 years of development.
-* 16 experienced contributors. **make me one - MattTheTekie**
-* HOME Menu customization, using community-created [themes and badges](https://themeplaza.art)
+* 17 experienced contributors. **make me one - MattTheTekie**
 * 0 days since someone asked for Bloodborne.
 ## What does this guide install?
 
