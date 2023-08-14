@@ -42,7 +42,5 @@ sudo mount -t exfat -o uid=`id -u`,gid=`id -g` ./ps4-hdd.exfat ./ps4-fs`
 tbc
 ### ArchWSL
 tbc
-___
-
 ### Continue to [Finalizing Setup](finalizing-setup)
 {: .notice--primary}
