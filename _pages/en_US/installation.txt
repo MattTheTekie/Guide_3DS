@@ -13,12 +13,19 @@ For the foreseeable future, installation will require Linux in some form.
 
 #### Section I - Install dependencies.
 ### Ubuntu based systems:
+Install dependencies.
 `sudo apt install build-essential cmake libunwind-dev libglfw3-dev libvulkan-dev vulkan-validationlayers-dev spirv-tools glslang-tools libspirv-cross-c-shared-dev`
 ### Fedora based systems:
+Install traditional dependencies.
 `sudo dnf install cmake libunwind-devel glfw-devel vulkan-devel vulkan-validation-layers-devel spirv-tools glslang-devel gcc-c++ gcc spirv-tools-devel xbyak-devel`
+Install `spirv-cross`.
+`git clone https://github.com/KhronosGroup/SPIRV-Cross && cd SPIRV-Cross && mkdir build && cd build && cmake .. && cmake --build . && sudo make install`
 ### Arch based systems:
+Install traditional dependencies.
 `sudo pacman -S libunwind glfw-x11 vulkan-devel glslang`
-
+Pull `spirv-cross` from the AUR. **Skip the first line if you have `yay` already.**
+`sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si`
+`yay -S spirv-cross`
 #### Section II - Continued Installation:
 Clone the repo.
 `git clone --recursive https://github.com/RPCSX/rpcsx && cd rpcsx
@@ -31,21 +38,10 @@ mkfs.exfat -n PS4-HDD ./ps4-hdd.exfat
 mkdir ps4-fs
 sudo mount -t exfat -o uid=`id -u`,gid=`id -g` ./ps4-hdd.exfat ./ps4-fs`
 
-#### Section II - Installing boot9strap
-
-In this section, you will install custom firmware to the dumped NAND image, and then install this NAND image back onto the console to install custom firmware on it.
-
-1. Run hardmod-b9s-installer
-    + Windows Users: Run `install-b9s.exe`
-    + Mac and Linux Users: Run `install-b9s.py`
-1. Flash your outputted `NAND-patched.bin` to your console with your hardmod
-1. Power off your console
-1. Disconnect your hardmod
-1. Press and hold (Select), and while holding (Select), power on your console
-{% include_relative include/configure-luma3ds.txt %}
-
-{% include_relative include/luma3ds-installed-note.txt %}
-
+#### Section III - WSL
+tbc
+### ArchWSL
+tbc
 ___
 
 ### Continue to [Finalizing Setup](finalizing-setup)
