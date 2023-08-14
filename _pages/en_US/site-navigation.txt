@@ -6,9 +6,9 @@ sitemap: false
 {% capture notice-1 %}
 **Popular**
 
-+ [Finalizing Setup](finalizing-setup)
-+ [Installing boot9strap (Soundhax)](installing-boot9strap-(soundhax))
-+ [Seedminer](seedminer)
++ [Home](home)
++ [Installation](installation)
++ [FAQ](faq)
 
 {% endcapture %}
 <div class="notice--info">{{ notice-1 | markdownify }}</div>
@@ -23,5 +23,6 @@ sitemap: false
 + [Home](home)
 + [Key Information](key-information)
 + [Troubleshooting](troubleshooting)
++ [Installation](installation)
 {% endcapture %}
 <div class="notice--primary">{{ notice-2 | markdownify }}</div>
