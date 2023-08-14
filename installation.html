@@ -493,9 +493,10 @@ window.cookieconsent.initialise({
   <li><a href="#fedora-based-systems" id="markdown-toc-fedora-based-systems">Fedora based systems:</a></li>
   <li><a href="#arch-based-systems" id="markdown-toc-arch-based-systems">Arch based systems:</a>    <ul>
       <li><a href="#section-ii---continued-installation" id="markdown-toc-section-ii---continued-installation">Section II - Continued Installation:</a></li>
-      <li><a href="#section-ii---installing-boot9strap" id="markdown-toc-section-ii---installing-boot9strap">Section II - Installing boot9strap</a></li>
+      <li><a href="#section-iii---wsl" id="markdown-toc-section-iii---wsl">Section III - WSL</a></li>
     </ul>
   </li>
+  <li><a href="#archwsl" id="markdown-toc-archwsl">ArchWSL</a></li>
   <li><a href="#continue-to-finalizing-setup" id="markdown-toc-continue-to-finalizing-setup">Continue to Finalizing Setup</a></li>
 </ul>
 
@@ -510,12 +511,19 @@ window.cookieconsent.initialise({
 
 <h4 id="section-i---install-dependencies">Section I - Install dependencies.</h4>
 <h3 id="ubuntu-based-systems">Ubuntu based systems:</h3>
-<p><code class="language-plaintext highlighter-rouge">sudo apt install build-essential cmake libunwind-dev libglfw3-dev libvulkan-dev vulkan-validationlayers-dev spirv-tools glslang-tools libspirv-cross-c-shared-dev</code></p>
+<p>Install dependencies.
+<code class="language-plaintext highlighter-rouge">sudo apt install build-essential cmake libunwind-dev libglfw3-dev libvulkan-dev vulkan-validationlayers-dev spirv-tools glslang-tools libspirv-cross-c-shared-dev</code></p>
 <h3 id="fedora-based-systems">Fedora based systems:</h3>
-<p><code class="language-plaintext highlighter-rouge">sudo dnf install cmake libunwind-devel glfw-devel vulkan-devel vulkan-validation-layers-devel spirv-tools glslang-devel gcc-c++ gcc spirv-tools-devel xbyak-devel</code></p>
+<p>Install traditional dependencies.
+<code class="language-plaintext highlighter-rouge">sudo dnf install cmake libunwind-devel glfw-devel vulkan-devel vulkan-validation-layers-devel spirv-tools glslang-devel gcc-c++ gcc spirv-tools-devel xbyak-devel</code>
+Install <code class="language-plaintext highlighter-rouge">spirv-cross</code>.
+<code class="language-plaintext highlighter-rouge">git clone https://github.com/KhronosGroup/SPIRV-Cross &amp;&amp; cd SPIRV-Cross &amp;&amp; mkdir build &amp;&amp; cd build &amp;&amp; cmake .. &amp;&amp; cmake --build . &amp;&amp; sudo make install</code></p>
 <h3 id="arch-based-systems">Arch based systems:</h3>
-<p><code class="language-plaintext highlighter-rouge">sudo pacman -S libunwind glfw-x11 vulkan-devel glslang</code></p>
-
+<p>Install traditional dependencies.
+<code class="language-plaintext highlighter-rouge">sudo pacman -S libunwind glfw-x11 vulkan-devel glslang</code>
+Pull <code class="language-plaintext highlighter-rouge">spirv-cross</code> from the AUR. <strong>Skip the first line if you have <code class="language-plaintext highlighter-rouge">yay</code> already.</strong>
+<code class="language-plaintext highlighter-rouge">sudo pacman -S --needed git base-devel &amp;&amp; git clone https://aur.archlinux.org/yay.git &amp;&amp; cd yay &amp;&amp; makepkg -si</code>
+<code class="language-plaintext highlighter-rouge">yay -S spirv-cross</code></p>
 <h4 id="section-ii---continued-installation">Section II - Continued Installation:</h4>
 <p>Clone the repo.
 <code class="language-plaintext highlighter-rouge">git clone --recursive https://github.com/RPCSX/rpcsx &amp;&amp; cd rpcsx
@@ -528,38 +536,11 @@ mkfs.exfat -n PS4-HDD ./ps4-hdd.exfat
 mkdir ps4-fs
 sudo mount -t exfat -o uid=</code>id -u<code class="language-plaintext highlighter-rouge">,gid=</code>id -g<code class="language-plaintext highlighter-rouge"> ./ps4-hdd.exfat ./ps4-fs</code></p>
 
-<h4 id="section-ii---installing-boot9strap">Section II - Installing boot9strap</h4>
-
-<p>In this section, you will install custom firmware to the dumped NAND image, and then install this NAND image back onto the console to install custom firmware on it.</p>
-
-<ol>
-  <li>Run hardmod-b9s-installer
-    <ul>
-      <li>Windows Users: Run <code class="language-plaintext highlighter-rouge">install-b9s.exe</code></li>
-      <li>Mac and Linux Users: Run <code class="language-plaintext highlighter-rouge">install-b9s.py</code></li>
-    </ul>
-  </li>
-  <li>Flash your outputted <code class="language-plaintext highlighter-rouge">NAND-patched.bin</code> to your console with your hardmod</li>
-  <li>Power off your console</li>
-  <li>Disconnect your hardmod</li>
-  <li>Press and hold (Select), and while holding (Select), power on your console</li>
-  <li>Your console should have booted into the Luma3DS configuration menu
-    <ul>
-      <li>Luma3DS configuration menu are settings for the Luma3DS custom firmware. Many of these settings may be useful for customization or debugging</li>
-      <li>For the purpose of this guide, <strong>leave these options on the default settings</strong> (do not check or uncheck anything)</li>
-      <li>If your console shuts down when you try to power it on, ensure that you have copied <code class="language-plaintext highlighter-rouge">boot.firm</code> from the Luma3DS <code class="language-plaintext highlighter-rouge">.zip</code> to the root of your SD card</li>
-    </ul>
-  </li>
-  <li>Press (Start) to save and reboot</li>
-</ol>
-
-<p>At this point, your console will boot to Luma3DS by default.</p>
-<ul>
-  <li>Luma3DS does not look any different from the normal HOME Menu. If your console has booted into the HOME Menu, it is running custom firmware.</li>
-  <li>On the next page, you will install useful homebrew applications to complete your setup.</li>
-</ul>
-
-<hr />
+<h4 id="section-iii---wsl">Section III - WSL</h4>
+<p>tbc</p>
+<h3 id="archwsl">ArchWSL</h3>
+<p>tbc
+___</p>
 
 <h3 class="notice--primary" id="continue-to-finalizing-setup">Continue to <a href="finalizing-setup">Finalizing Setup</a></h3>
 
