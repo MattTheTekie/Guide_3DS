@@ -14,9 +14,6 @@ excerpt: "RPCSX is your PlayStation™ 4 emulator.<br />"
 Thoroughly read all of the introductory pages (including this one!) before proceeding.
 {: .notice--info}
 
-{% capture update-notice %}
-{% include_relative include/3ds-11.17.txt %}
-{% endcapture %}
 <div class="notice--danger">{{ update-notice | markdownify }}</div>
 
 ## What is RPCSX?
