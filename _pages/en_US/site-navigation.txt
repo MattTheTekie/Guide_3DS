@@ -6,7 +6,7 @@ sitemap: false
 {% capture notice-1 %}
 **Popular**
 
-+ [Home](home)
++ [Home]()
 + [Installation](installation)
 + [FAQ](faq)
 
@@ -20,7 +20,7 @@ sitemap: false
 + [Contribute](contribute)
 + [FAQ](faq)
 + [Example](example)
-+ [Home](home)
++ [Home]()
 + [Key Information](key-information)
 + [Troubleshooting](troubleshooting)
 + [Installation](installation)
