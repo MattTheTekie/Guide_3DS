@@ -153,7 +153,6 @@ footer:
 # Reading Files
 include:
   - .htaccess
-  - _pages
   - _pages/en_US
 exclude: [
   "*.sublime-project",
@@ -186,8 +185,7 @@ exclude: [
   crowdin.yaml,
   staticman.yml,
   torrents,
-  _pages/*/include,
-  # _pages/en_US,
+  _pages/en_US/*/include,
 ]
 
 keep_files:
