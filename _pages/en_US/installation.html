@@ -367,22 +367,21 @@ window.cookieconsent.initialise({
 
 <h3 id="preperation">Preperation:</h3>
 <h4 id="section-i---install-dependencies">Section I - Install dependencies</h4>
-<p class="notice--info">Fire up a terminal, and run the following commands.
-Install dependencies</p>
+<p class="notice--info">Fire up a terminal, and run the following commands.</p>
 
 <p><code class="language-plaintext highlighter-rouge">sudo apt install build-essential cmake libunwind-dev libglfw3-dev libvulkan-dev vulkan-validationlayers-dev spirv-tools glslang-tools libspirv-cross-c-shared-dev</code></p>
 <h3 id="fedora-based-systems">Fedora based systems:</h3>
-<p class="notice--info">Fire up a terminal, and run the following commands.
-Install dependencies</p>
+<p class="notice--info">Fire up a terminal, and run the following commands.</p>
 
-<p class="notice--info">Install spirv-cross.</p>
+<p class="notice--info">Install <code class="language-plaintext highlighter-rouge">spirv-cross</code>.</p>
 
 <p><code class="language-plaintext highlighter-rouge">sudo dnf install cmake libunwind-devel glfw-devel vulkan-devel vulkan-validation-layers-devel spirv-tools glslang-devel gcc-c++ gcc spirv-tools-devel xbyak-devel</code></p>
 
 <p><code class="language-plaintext highlighter-rouge">git clone https://github.com/KhronosGroup/SPIRV-Cross &amp;&amp; cd SPIRV-Cross &amp;&amp; mkdir build &amp;&amp; cd build &amp;&amp; cmake .. &amp;&amp; cmake --build . &amp;&amp; sudo make install</code></p>
 <h3 id="arch-based-systems">Arch based systems:</h3>
-<p>Fire up a terminal, and run the following commands.
-<code class="language-plaintext highlighter-rouge">sudo pacman -S libunwind glfw-x11 vulkan-devel glslang</code></p>
+<p class="notice--info">Fire up a terminal, and run the following commands.</p>
+
+<p><code class="language-plaintext highlighter-rouge">sudo pacman -S libunwind glfw-x11 vulkan-devel glslang</code></p>
 
 <p class="notice--info">Pull <code class="language-plaintext highlighter-rouge">spirv-cross</code> from the AUR. <strong>Skip the first line if you have yay already.</strong></p>
 
@@ -393,9 +392,9 @@ Install dependencies</p>
 <h4 id="section-ii---continued-installation">Section II - Continued Installation:</h4>
 <p class="notice--info">Clone the repo.</p>
 
-<p>`git clone –recursive https://github.com/RPCSX/rpcsx &amp;&amp; cd rpcsx</p>
+<p><code class="language-plaintext highlighter-rouge">git clone --recursive https://github.com/RPCSX/rpcsx &amp;&amp; cd rpcsx</code></p>
 
-<p>git submodule update –init –recursive`</p>
+<p><code class="language-plaintext highlighter-rouge">git submodule update --init --recursive</code></p>
 
 <p class="notice--info">Compile the emulator.</p>
 
@@ -403,13 +402,13 @@ Install dependencies</p>
 
 <p class="notice--info">Create a virtual HDD. Note that the PS4 filesystem is <strong>case-insensitive.</strong></p>
 
-<p>`truncate -s 512M ps4-hdd.exfat</p>
+<p><code class="language-plaintext highlighter-rouge">truncate -s 512M ps4-hdd.exfat</code></p>
 
-<p>mkfs.exfat -n PS4-HDD ./ps4-hdd.exfat</p>
+<p><code class="language-plaintext highlighter-rouge">mkfs.exfat -n PS4-HDD ./ps4-hdd.exfat</code></p>
 
-<p>mkdir ps4-fs</p>
+<p><code class="language-plaintext highlighter-rouge">mkdir ps4-fs</code></p>
 
-<p>sudo mount -t exfat -o uid=<code class="language-plaintext highlighter-rouge">id -u</code>,gid=<code class="language-plaintext highlighter-rouge">id -g</code> ./ps4-hdd.exfat ./ps4-fs`</p>
+<p><code class="language-plaintext highlighter-rouge">sudo mount -t exfat -o uid=</code>id -u<code class="language-plaintext highlighter-rouge">,gid=</code>id -g<code class="language-plaintext highlighter-rouge"> ./ps4-hdd.exfat ./ps4-fs</code></p>
 
 <h4 id="section-iii---wsl">Section III - WSL</h4>
 <p>Windows Subsystem for Linux, and ArchWSL will be appended to this guide when they are available.</p>
