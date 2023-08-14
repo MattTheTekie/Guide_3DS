@@ -14,8 +14,6 @@ excerpt: "RPCSX is your PlayStation™ 4 emulator.<br />"
 Thoroughly read all of the introductory pages (including this one!) before proceeding.
 {: .notice--info}
 
-<div class="notice--danger">{{ update-notice | markdownify }}</div>
-
 ## What is RPCSX?
 
 **RPCSX is non-commercial and is not affiliated with Sony or PlayStation.** Use only with lawfully obtained archival copies of PS4 games you physically own.
