@@ -59,8 +59,6 @@ If you do NOT boot into the Luma3DS configuration menu, custom firmware was not 
 
 In this section, you will update your system to the latest version, which is safe to do with custom firmware.
 
-{% include_relative include/sysupdate.txt cfw="true" %}
-
 #### Section III - Prep Work
 
 In this section, you will copy the files necessary to follow the rest of the instructions on this page.
