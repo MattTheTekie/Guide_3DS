@@ -28,7 +28,7 @@ The emulator can run a few test samples, and can get to the loading screen of `W
 
 {% capture compat %}
 <summary><strong>Linux</strong></summary>
-![]({{ "/images/screenshots/onboarding/sdroot.png" | absolute_url }})
+![]({{ "/images/linux.jpg" | absolute_url }})
 {: .notice--info}
 You will **need** Linux to install the RPCSX emulator. The RPCSX emulator **will not** work on WSL. Until we progress enough in the development of the emulator this project **will be Linux only.**
 {% endcapture %}
