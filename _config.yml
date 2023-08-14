@@ -153,7 +153,7 @@ footer:
 # Reading Files
 include:
   - .htaccess
-  - _pages/en_US
+  - _pages/*
 exclude: [
   "*.sublime-project",
   "*.sublime-workspace",
@@ -184,7 +184,6 @@ exclude: [
   rss.py,
   crowdin.yaml,
   staticman.yml,
-  _pages/en_US/*/include,
 ]
 
 keep_files:
@@ -286,7 +285,7 @@ compress_html:
 defaults:
   # _pages
   - scope:
-      path: ""
+      path: "_pages/en_US/"
       type: pages
     values:
       layout: single
