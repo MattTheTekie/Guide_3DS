@@ -1,6 +1,7 @@
 ---
 title: "Credits"
 ---
+#### WIP
 
 This guide is currently maintained by: **lifehackerhansol, lilyuwuu, eip618, ihaveamac, and adrot**, with additional significant contributions from **Gruetzig, danny8376, MechanicalDragon0687, and the various #community-resources members** who provide valuable input.
 
