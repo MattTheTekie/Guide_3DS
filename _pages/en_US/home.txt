@@ -19,7 +19,7 @@ Thoroughly read all of the introductory pages (including this one!) before proce
 {% endcapture %}
 <div class="notice--danger">{{ update-notice | markdownify }}</div>
 
-## What is custom firmware?
+## What is RPCSX?
 
 **RPCSX is non-commercial and is not affiliated with Sony or PlayStation.** Use only with lawfully obtained archival copies of PS4 games you physically own.
 
