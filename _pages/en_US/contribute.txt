@@ -10,7 +10,7 @@ This guide is open-source; our repository is available [here](https://github.com
 
 ## Translations
 #### Add crowdin link
-If you'd like to translate this guide into other languages (or help keep the existing translations up-to-date), check out our [Crowdin](https://crowdin.com/project/3ds-guide).
+If you'd like to translate this guide into other languages (or help keep the existing translations up-to-date), check out our [Crowdin](#).
 
 There is also an [RSS feed]({{ "rss.xml" | absolute_url }}) that may be updated for future content, which you can subscribe to.
 
