@@ -484,7 +484,7 @@ window.cookieconsent.initialise({
 <nav class="toc">
     <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> Table of Contents</h4></header>
 <ul class="toc__menu" id="markdown-toc">
-  <li><a href="#things-you-should-know-about-the-3ds" id="markdown-toc-things-you-should-know-about-the-3ds">Things you should know about the 3DS</a></li>
+  <li><a href="#things-you-should-know-about-the-progress-of-this-emulator" id="markdown-toc-things-you-should-know-about-the-progress-of-this-emulator">Things you should know about the progress of this emulator</a></li>
   <li><a href="#things-you-need-to-do-on-your-computer" id="markdown-toc-things-you-need-to-do-on-your-computer">Things you need to do on your computer</a></li>
   <li><a href="#getting-help" id="markdown-toc-getting-help">Getting help</a></li>
 </ul>
@@ -504,39 +504,19 @@ window.cookieconsent.initialise({
 
 </div>
 
-<p class="notice--info">If this is your first time modding a 3DS (or you’re unfamiliar with technology), keep reading! Otherwise, if you have prior experience and know what you’re doing, continue to <a href="get-started">Get Started</a>.</p>
+<p class="notice--info">If this is your first time working with emulators (or you’re unfamiliar with technology), keep reading! Otherwise, if you have prior experience and know what you’re doing, continue to <a href="get-started">Get Started</a>.</p>
 
-<p>This page covers some of the base computer terminology and 3DS-specific information that you should know before following this guide.</p>
+<p>This page covers some of the base computer terminology and emulator related-specific information that you should know before following this guide.</p>
 
 <p>Each section is collapsed by default. Click or tap on the name of the section to open it.</p>
 
-<h2 id="things-you-should-know-about-the-3ds">Things you should know about the 3DS</h2>
+<h2 id="things-you-should-know-about-the-progress-of-this-emulator">Things you should know about the progress of this emulator</h2>
 
 <details>
-<summary><strong>3DS/2DS compatibility</strong></summary>
+<summary><strong>Game compatibility</strong></summary>
 <p class="notice--info"><img src="https://sdkpaint.github.io/rpcsx-guide/images/screenshots/onboarding/compatible.png" alt="" /></p>
 
-<p>This guide works with every retail console in the Nintendo 3DS family of consoles (including the 3DS, 3DS XL/LL, 2DS, New 3DS, New 3DS XL/LL, and New 2DS XL/LL), regardless of region or firmware.</p>
-</details>
-
-<details>
-<summary><strong>Computer compatibility</strong></summary>
-<p class="notice--info"><img src="https://sdkpaint.github.io/rpcsx-guide/images/screenshots/onboarding/os.jpg" alt="" /></p>
-<p>You can follow this guide as long as you are able to download files from the Internet and copy them to your SD card. Depending on your computer/phone/electronic device, you may need to purchase a USB to SD card adapter to allow your computer to read your SD card.</p>
-</details>
-
-<details>
-<summary><strong>SD card location, type, and capacity</strong></summary>
-<p class="notice--info"><img src="https://sdkpaint.github.io/rpcsx-guide/images/screenshots/onboarding/sdcard.jpg" alt="" /></p>
-
-<p>The location of the SD card slot and the type of SD card that is accepted depends on the model of your 3DS. More information can be found on <a href="https://en-americas-support.nintendo.com/app/answers/detail/a_id/271/~/how-to-insert-an-sd-card-or-microsd-card">Nintendo’s official support page</a>.</p>
-
-<p>The 3DS can read SD cards of any capacity (even those larger than 32GB), but the card must be formatted as FAT32 (<strong>not</strong> exFAT or NTFS). You can use one of the following tools to format your SD card, depending on your operating system: <a href="formatting-sd-(windows)">Windows</a>, <a href="formatting-sd-(mac)">macOS</a>, <a href="formatting-sd-(linux)">Linux</a>. SD cards larger than <strong>128GB</strong> are not recommended due to known issues with custom themes and GBA/DS graphics.</p>
-
-<p class="notice--warning">To follow this guide, you’ll need an SD card with a capacity of at least <strong>2GB</strong>.</p>
-
-<p class="notice--info">If you want, you can check your SD card for errors before following this guide using <a href="h2testw-(windows)">H2testw (Windows)</a>, <a href="f3-(linux)">F3 (Linux)</a>, or <a href="f3xswift-(mac)">F3XSwift (Mac)</a></p>
-
+<p>The emulator can run a few test samples, and can get to the loading screen of We Are Doomed. A compatibility table is in the works, and will likely arise when RPCSX is able to properly run commercial games.</p>
 </details>
 
 <details class="notice--warning">
@@ -551,19 +531,9 @@ window.cookieconsent.initialise({
 <h2 id="things-you-need-to-do-on-your-computer">Things you need to do on your computer</h2>
 
 <details>
-<summary><strong>File placement terminology (e.g. "root of SD")</strong></summary>
+<summary><strong>Linux</strong></summary>
 <p class="notice--info"><img src="https://sdkpaint.github.io/rpcsx-guide/images/screenshots/onboarding/sdroot.png" alt="" /></p>
-
-<p>When copying files to the SD card, it is important to copy them to the right location - otherwise, the console will not detect the file and the exploit or software you are trying to use will not work. A term you will see frequently on this guide is <strong>root of the SD card</strong>, which means you are not inside any folder on your SD card. The directory that appears when you first open your SD card on your computer is called the ‘root’.</p>
-
-<p>You may also see folder names indicated like this: <code class="language-plaintext highlighter-rouge">/folder/</code>. The slashes are used to indicate directories and are not part of the name of the folder. For example, <code class="language-plaintext highlighter-rouge">/folder1/folder2/</code> would refer to <code class="language-plaintext highlighter-rouge">folder2</code> inside of <code class="language-plaintext highlighter-rouge">folder1</code>:</p>
-
-<p class="notice--info"><img src="https://sdkpaint.github.io/rpcsx-guide/images/screenshots/onboarding/folders.png" alt="" /></p>
-
-<p><strong>Angle brackets</strong> (&lt; and &gt;) are also occasionally used to refer to system-specific identifiers. For example, if the guide says <code class="language-plaintext highlighter-rouge">&lt;ID0&gt;</code>, it is referring to the system-specific identifier inside of the <code class="language-plaintext highlighter-rouge">Nintendo 3DS</code> folder, rather than a folder literally named “ID0”:</p>
-
-<p class="notice--info"><img src="https://sdkpaint.github.io/rpcsx-guide/images/screenshots/onboarding/anglebrackets.png" alt="" /></p>
-
+<p>You will <strong>need</strong> Linux to install the RPCSX emulator. The RPCSX emulator <strong>will not</strong> work on WSL. Until we progress enough in the development of the emulator this project <strong>will be linux only.</strong></p>
 </details>
 
 <details>
