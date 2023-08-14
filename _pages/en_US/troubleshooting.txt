@@ -770,8 +770,6 @@ Your console likely still has menuhax67 installed. To uninstall menuhax67, downl
 
 If you are missing the Homebrew Launcher application from your HOME Menu, you can follow these instructions to manually enter the Homebrew Launcher. (You will need [boot.3dsx and boot.firm](https://github.com/LumaTeam/Luma3DS/releases/latest) on the root of your SD card.)
 
-{% include_relative include/launch-hbl-dlp.txt %}
-
 {% endcapture %}
 <details>{{ compat | markdownify }}</details>
 
