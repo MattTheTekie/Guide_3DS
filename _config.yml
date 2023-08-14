@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "nord" # "default" # "air", "aqua", "contrast", "dark
 
 # Site Settings
 locale                   : "en-US"
-title                    : "RPCSX Guide"
+title                    : "RPCSX - PS4 Emulator"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "PlayStation™ 4 emulator"
+name                     : "RPCSX"
 description              : "A complete guide to setting up the RPCSX emulator."
 url                      : "https://sdkpaint.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 enforce_ssl              : "sdkpaint.github.io/rpcsx-guide"
